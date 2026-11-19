@@ -1,0 +1,26 @@
+Options -MultiViews
+RewriteEngine On
+RewriteBase /lumea-beauty/
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+RewriteRule ^product/([^/]+)/?$ product/index.php?slug=$1 [QSA,L]
+RewriteRule ^category/([^/]+)/?$ category/index.php?slug=$1 [QSA,L]
+RewriteRule ^brand/([^/]+)/?$ brand/index.php?slug=$1 [QSA,L]
+RewriteRule ^blog/([^/]+)/?$ blog/post.php?slug=$1 [QSA,L]
+RewriteRule ^shop/?$ shop/index.php [QSA,L]
+RewriteRule ^cart/?$ cart/index.php [QSA,L]
+RewriteRule ^checkout/?$ checkout/index.php [QSA,L]
+RewriteRule ^order-tracking/?$ order-tracking/index.php [QSA,L]
+RewriteRule ^quiz/?$ quiz/index.php [QSA,L]
+RewriteRule ^sitemap\.xml$ sitemap.php [QSA,L]
+RewriteRule ^$ index.php [L]
+ErrorDocument 404 /lumea-beauty/404.php
+<IfModule mod_headers.c>
+Header always set X-Content-Type-Options "nosniff"
+Header always set X-Frame-Options "SAMEORIGIN"
+Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+<FilesMatch "\.(sql|log|ini|env|bak)$">
+Require all denied
+</FilesMatch>

@@ -1,0 +1,36 @@
+Luméa Beauty v2 — Completion Audit / Enhancements
+
+Verified:
+- 88 PHP files pass PHP 8.4 syntax lint.
+- main.js, search.js and catalog.js pass Node syntax checks.
+- Existing SQL schema/seed retained; no destructive schema edits added beyond existing project SQL.
+- Added cache-busting to local CSS/JS assets.
+- Added quick-view AJAX and modal.
+- Added Buy Now flow.
+- Added recently viewed/trending storefront sections.
+- Best sellers now rank by delivered order quantities.
+- Added rating and stock availability filters.
+- Search now surfaces matching categories and brands.
+- Coupon restrictions now support product/category/customer eligibility.
+- Admin coupons now support full create/edit/delete and restrictions.
+- Admin category page now manages categories and subcategories.
+- Admin brands support logo upload and featured/active controls.
+- Admin blog supports featured images and SEO fields.
+- Admin product forms support SEO fields, gallery upload, and dedicated image management.
+- Admin variants now support edit/delete.
+- Reviews and Q&A support moderation/deletion.
+- Customer addresses now support edit/delete/default.
+- Checkout has session idempotency token and only exposes COD as active.
+- Order cancellation restores inventory; admin status changes handle stock restoration/re-deduction.
+- Customer/admin login have 5-attempt / 15-minute lockout structure.
+- Confirmation page is session/customer protected.
+- Canonical URL generation fixed.
+- Product JSON-LD added.
+- sitemap.xml and robots.txt added.
+- WhatsApp contact now reads from settings.
+- Dashboard includes monthly revenue/order bars and top delivered products.
+
+Known external integrations intentionally not faked:
+- Real card/Easypaisa/JazzCash gateway credentials.
+- Transactional email provider.
+These remain integration-ready while Cash on Delivery is fully functional locally.

@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /includes/
+Disallow: /ajax/
+Disallow: /uploads/
+Sitemap: http://localhost/lumea-beauty/sitemap.xml

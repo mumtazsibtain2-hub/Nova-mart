@@ -1,0 +1,4 @@
+Lumea Beauty v3
+- Fixed admin dashboard fatal error when there are no monthly orders/revenue rows.
+- Added resilient inline admin UI styling and cache-busted admin stylesheet.
+- Admin dashboard now renders empty monthly/top-product states safely.

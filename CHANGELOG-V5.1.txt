@@ -1,0 +1,13 @@
+Luméa Beauty v5.1 — Shop QA Hotfix
+
+Fixed after localhost Production QA:
+- Corrected Shop desktop layout: removed accidental nested grid constraint that collapsed the product catalog into narrow columns.
+- Corrected responsive Shop layout breakpoints to target .shop-layout instead of .shop-shell.
+- Fixed mobile filter drawer class mismatch so the drawer itself opens with the overlay.
+- Fixed AJAX loading-state CSS so skeleton loaders display only during requests and product results remain visible afterward.
+- Preserved all existing filters, sorting, pagination and AJAX catalog behavior.
+
+Files changed:
+- assets/css/style.css
+- assets/css/responsive.css
+- assets/js/catalog.js

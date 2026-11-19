@@ -1,0 +1,14 @@
+Luméa Beauty V5.3 — Cart & Product QA Hotfix
+Date: 2026-08-19
+
+Fixed:
+- Cart quantity field now updates totals reliably while typing, on change, on blur, and on form submit.
+- Cart line total, subtotal, grand total, shipping, coupon state and header cart badge stay synchronized after quantity changes.
+- Added an explicit Update quantity fallback button so the cart remains usable if AJAX is unavailable.
+- Fixed cart row layout where product name and “View product” touched each other.
+- Fixed clipped Remove/Wishlist actions by widening and reflowing the action column.
+- Added responsive cart row rules for tablet/mobile.
+- Product detail “Add to Wishlist” button is now visible and styled correctly (it was inheriting the product-card floating heart styles).
+- Added horizontal-overflow protection for product/detail pages.
+
+No database migration is required.

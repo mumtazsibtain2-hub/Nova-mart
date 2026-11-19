@@ -1,0 +1,20 @@
+Lumea Beauty v4 — Runtime Repair & Admin Dashboard Hardening
+===========================================================
+
+Fixed:
+- Reworked admin/dashboard.php to safely handle an empty orders table.
+- Removed the max() TypeError shown on /admin/dashboard.php when there are no monthly rows.
+- Revenue chart now uses an explicit array and a safe fallback maximum.
+- Added empty-state UI for monthly revenue, delivered-product ranking, and low-stock sections.
+- Added pending-order, low-stock, pending-review, and new-message dashboard counters.
+- Added clearer admin dashboard labels and links to relevant management pages.
+
+Validation performed in the build environment:
+- All 88 PHP files pass PHP syntax linting.
+- Database schema remains the existing v3 schema/seed; no destructive schema changes were made.
+- The package remains compatible with PHP 8+ / MySQL / MariaDB / XAMPP.
+
+Important:
+- The supplied screenshots show the local v3 dashboard failing at max() in admin/dashboard.php.
+- Replace the old project folder with this package and refresh the admin dashboard.
+- If phpMyAdmin/database is already working and setup-check.php shows PASS, do not re-import the SQL unless you specifically want to reset the database.

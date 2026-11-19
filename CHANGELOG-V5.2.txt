@@ -1,0 +1,8 @@
+Luméa Beauty V5.2 Shop Layout Hotfix
+====================================
+- Replaced the desktop Shop two-column CSS Grid shell with a hardened flex layout.
+- Forced the catalog column and AJAX results to consume the full remaining width.
+- Prevented product cards from collapsing into narrow vertical lines.
+- Preserved sticky desktop filters and the mobile off-canvas filter drawer.
+- Added explicit 4/3/2-column catalog breakpoints.
+- Bumped CSS/JS asset query versions to force cache refresh.
